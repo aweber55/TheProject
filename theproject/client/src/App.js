@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
 import axios from 'axios';
-
+import Main from "./components/Main";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import Home from "./components/Home";
@@ -82,8 +82,11 @@ class App extends Component {
   render() {
     const loggedIn = this.state.auth.isAuthenticated;
     return (
+      
       <Router>
+       
         <div>
+         
         <Route exact path = "/" render = {()=> {
           if(loggedIn){
             return <Redirect to = "/home" />
@@ -116,6 +119,7 @@ class App extends Component {
           } 
         }
         }/>
+         <Route exact path="/main" component={Main} />
         </div>
       </Router>
     );
