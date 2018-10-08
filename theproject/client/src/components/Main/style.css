@@ -1,7 +1,15 @@
   .body-component-a {
-    background: url("../../../src/images/food_paring.jpg") no-repeat center center fixed;
+    background: url("../../../src/images/wood-top.jpeg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+.imageone {
+  width: 10px;
+  height: 10px;
+}
+
+#recipeCard {
+  border: 4px, solid, black;
 }

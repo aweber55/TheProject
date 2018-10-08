@@ -16,13 +16,14 @@ const SearchForm = props => (
         placeholder="type in your food"
         id="food"
       />
-      {/* <datalist id="food">
+      {/* <datalist id="recipes.id">
         {props.recipes.map(recipes => <option value={recipes} key={recipes} />)}
       </datalist> */}
+      
       <button
         type="submit"
         onClick={props.handleFormSubmit}
-        className="btn btn-success"
+        className="btn btn-tw btn-outline-info waves-effect butnSubm"
       >
         Search
       </button>

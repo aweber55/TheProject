@@ -1,10 +1,19 @@
 import React from 'react';
 import "./style.css";
 import {Link} from 'react-router-dom';
+import {Col, Container, Row} from "../Grid";
+
+
 
 const SignIn = (props)=> {
 	return (
-		<div>
+		<Container>
+			
+			<Row>
+				{/* <div className="col-4"></div> */}
+				<Col size="col-12">
+				
+		<div id="signIn">
 			<h1>SIGN IN</h1>
 			<Link to = "/signup" >Go to sign up</Link>
 			<form>
@@ -14,9 +23,12 @@ const SignIn = (props)=> {
 				<label>Password</label><br/>
 				<input name='password' type='password' value = {props.password} onChange = {props.handleChange} />
 				<br />
-				<button type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button>
+				<button  id="btnSign" type = 'submit' name = "/auth/signin" onClick = {props.handleSubmit}>Sign In</button>
 			</form>
 		</div>
+		</Col>
+		</Row>
+		</Container>
 	);
 };
 

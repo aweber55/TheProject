@@ -28,9 +28,10 @@ app.use('/',routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 //add mongo heroku uri
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/theproject-development"
-);
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/theproject-development";
+mongoose.connect( MONGODB_URI, { useNewUrlParser: true });
+  // process.env.MONGODB_URI || "mongodb://localhost/theproject-development"
+// );
 
 // Start the API server
 app.listen(PORT, function() {
