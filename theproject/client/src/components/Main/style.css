@@ -8,8 +8,20 @@
 .imageone {
   width: 10px;
   height: 10px;
+  
 }
 
 #recipeCard {
-  border: 4px, solid, black;
+  border-color: 1px, solid, black;
+}
+
+ul {
+  list-style: none;
+}
+/* #overflow {
+  overflow: hidden;
+  display: none;
+} */
+#beerName {
+  color: aquamarine;
 }
