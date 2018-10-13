@@ -56,7 +56,7 @@ class Main extends React.Component {
     saveRecipe = (recipe) => {
         let newRecipe = {
           title: recipe.title,
-          recipe: recipe.recipe,
+          // recipe: recipe.recipe,
           source_url: recipe.source_url,
           
         //   is_saved: true
@@ -174,7 +174,7 @@ class Main extends React.Component {
                       key={recipe.recipe_id}
                       _id={recipe.recipe_id}
                       title={recipe.title}
-                      url={recipe.source_url}
+                      source_url={recipe.source_url}
                       handleClick={this.saveRecipe}
                       image_url={recipe.image_url}
                     //   onClick={this.saveRecipe}
@@ -184,6 +184,7 @@ class Main extends React.Component {
                     />
                    
                   ))}
+                  
                   {/* <button onClick={this.saveRecipe}>save</button> */}
                 </List>
               ) : (
