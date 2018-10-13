@@ -24,4 +24,13 @@ ul {
 } */
 #beerName {
   color: aquamarine;
+  text-align: center;
+}
+/* #displayImage {
+  float: right;
+  padding-left: 40px;
+} */
+
+.frameWork {
+  
 }

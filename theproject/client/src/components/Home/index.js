@@ -1,16 +1,16 @@
 import React from 'react';
-import "./style.css";
-import Nav from "../Nav";
+import "./homestyle.css";
+import Jumbotron from "../Jumbotron/";
 import {Col, Container, Row} from "../Grid";
 import {Link} from 'react-router-dom';
 
 const Home = (props) =>{
 	return (
 		
-
+<div className="Home">
 		<Container>
-		<Nav />
-
+		{/* <Nav /> */}
+		<Jumbotron />
 		<Row>
 		<Col size="col-12">
 		<div className="container home">
@@ -29,6 +29,7 @@ const Home = (props) =>{
 			</Row>
 		
 		</Container>
+		</div>
 	);
 };
 

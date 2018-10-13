@@ -1,0 +1,10 @@
+.home {
+   color: red;
+}
+.center-block {
+    background-color: bisque;
+}
+/* .center-block {
+    display: flex;
+    justify-content: right;
+  } */

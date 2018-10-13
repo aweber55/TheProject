@@ -5,8 +5,10 @@ import React from "react";
 const SearchForm = props => (
   <form className="search">
     <div className="form-group">
-      <label htmlFor="food">Food:</label>
+      <label htmlFor="food" id="foodTitle">Food:</label>
       <input
+        // action="/recipes"
+        // method='POST'
         value={props.search}
         onChange={props.handleInputChange}
         name="food"
@@ -16,7 +18,7 @@ const SearchForm = props => (
         placeholder="type in your food"
         id="food"
       />
-      {/* <datalist id="recipes.id">
+      {/* <datalist id="recipes._id">
         {props.recipes.map(recipes => <option value={recipes} key={recipes} />)}
       </datalist> */}
       

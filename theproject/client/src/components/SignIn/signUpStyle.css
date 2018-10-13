@@ -1,0 +1,51 @@
+.signBody {
+    color: rgb(189, 46, 10);
+    
+  }
+
+  #signIn {
+    padding: 20px;
+    margin: 10px;
+      background-color: burlywood;
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      text-align: center; 
+      /* background-color: #ccc; */
+      border: 3px solid rgb(22, 21, 21); 
+  }
+  #btnSign {
+    margin-top: 7px;
+    border-top: 1px solid #96d1f8;
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   padding: 11.5px 23px;
+   -webkit-border-radius: 16px;
+   -moz-border-radius: 16px;
+   border-radius: 16px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+  }
+
+  #btnSign:hover {
+    border-top-color: #2889c9;
+    background: #2889c9;
+    color: #ccc;
+  }
+  #btnSign:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    }

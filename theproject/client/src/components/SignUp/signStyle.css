@@ -1,0 +1,13 @@
+#signUp {
+    padding: 20px;
+    margin: 10px;
+      background-color: burlywood;
+      position: absolute;
+      top: 62%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      text-align: center; 
+      /* background-color: #ccc; */
+      border: 3px solid rgb(22, 21, 21); 
+}

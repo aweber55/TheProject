@@ -2,13 +2,19 @@ module.exports = function (passport) {
 	const path = require("path");
 	const router = require('express').Router();
 	const recipeController = require("../controllers/recipeController");
-
+	const userController = require("../controllers/userController.js")
 
 	// add any API routes here
-	router.route("/")
-	// .get(recipeController.findAll)
+	router.route("/recipes")
+	.get(recipeController.findAll)
 	.post(recipeController.create);
-  
+	console.log("got to the other one")
+	
+	router.route("/users")
+	.get(userController.findAll);
+	console.log("got to api routes")
+
+
   // Matches with "/api/articles/:id"
   router
 	.route("/:id")
@@ -18,4 +24,5 @@ module.exports = function (passport) {
   
 
 	return router;
+	
 };

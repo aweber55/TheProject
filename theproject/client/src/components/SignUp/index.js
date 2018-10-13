@@ -1,10 +1,12 @@
 import React from 'react';
-import "./style.css";
+import "./signStyle.css";
 import {Link} from 'react-router-dom';
+import Jumbotron from "../Jumbotron/";
 
 const SignUp = (props)=> {
 	return (
-		<div>
+		<div id="signUp">
+		<Jumbotron />
 			<h1>SIGN UP</h1>
 			<Link to = "/" >Go to sign in</Link>
 			<form>

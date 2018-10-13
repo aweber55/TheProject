@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = props => (
-  <div className="card mt-4">
+  <div className="card mb-3">
     <div className="card-header">
       <h3>
         <strong>

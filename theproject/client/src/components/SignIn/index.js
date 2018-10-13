@@ -1,17 +1,19 @@
 import React from 'react';
-import "./style.css";
+import "./signUpStyle.css";
 import {Link} from 'react-router-dom';
 import {Col, Container, Row} from "../Grid";
-
+import Jumbotron from "../Jumbotron/";
 
 
 const SignIn = (props)=> {
+	
 	return (
+		<div className="signBody">
 		<Container>
-			
+			<Jumbotron />
 			<Row>
 				{/* <div className="col-4"></div> */}
-				<Col size="col-12">
+				<Col size="col-4">
 				
 		<div id="signIn">
 			<h1>SIGN IN</h1>
@@ -29,6 +31,7 @@ const SignIn = (props)=> {
 		</Col>
 		</Row>
 		</Container>
+		</div>
 	);
 };
 
